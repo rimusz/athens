@@ -11,8 +11,9 @@ steps:
   - pwd
   - ct lint --config .test/ct.yaml
   when:
+    branch:
+      excludes: master
     event:
-      - push
       - pull_request
 
 - name: build
