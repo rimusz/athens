@@ -12,7 +12,6 @@ steps:
     branch:
       - master
     event:
-      - push
       - pull_request
 
 - name: build
