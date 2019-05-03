@@ -9,10 +9,10 @@ steps:
   commands: 
   - ls -alh
   - pwd
-  - ct lint --config .test/ct.yaml
+  - ct lint --config test/ct.yaml
   when:
     branch:
-      excludes: master
+      - master
     event:
       - push
       - pull_request
